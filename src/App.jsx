@@ -1,23 +1,8 @@
-import React, { useEffect } from 'react';
-import { getPost } from './api/PostApi';
-
+import React from 'react';
+import { Posts } from './components/Posts';
 
 const App = () => {
-  const getPostData = async () => {
-    const res = await getPost();
-    console.log(res.data);
-    
-  }
-
-  useEffect(() => {
-    getPostData();
-  }, []);
-
-  return (
-    <>
-      <h1>Hello React Curd Operation!</h1>
-    </>
-  );
+  return <Posts />;
 };
 
 export default App;

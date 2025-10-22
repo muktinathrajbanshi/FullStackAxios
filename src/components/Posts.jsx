@@ -11,5 +11,7 @@ export const Posts = () => {
   useEffect(() => {
     getPostData();
   }, []);
-  
-}
+
+  return <h1>Hello Post Page!</h1>
+
+};
