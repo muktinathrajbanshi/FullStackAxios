@@ -20,12 +20,15 @@ export const Posts = () => {
     <ul>
         {
             data.map((curElem) => {
-                const {id, body, title} = curElem
+                const {id, body, title} = curElem;
                 return (
                     <li key={id}>
-
+                    <p>{title}</p>
+                    <p>{body}</p>
+                    <button>Edit</button>
+                    <button>Delete</button>
                     </li>
-                )
+                );
             })
         }
     </ul>
