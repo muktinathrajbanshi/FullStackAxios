@@ -1,17 +1,34 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { getPost } from "../api/PostApi";
 
 export const Posts = () => {
+
+    const [data, setData] = useState([]);
+
+
   const getPostData = async () => {
     const res = await getPost();
     console.log(res.data);
-    
+    setData(res.data);
   }
 
   useEffect(() => {
     getPostData();
   }, []);
 
-  return <h1>Hello Post Page!</h1>
+  return <section className="section-post">
+    <ul>
+        {
+            data.map((curElem) => {
+                const {id, body, title} = curElem
+                return (
+                    <li key={id}>
+
+                    </li>
+                )
+            })
+        }
+    </ul>
+  </section>
 
 };
