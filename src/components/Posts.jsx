@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getPost } from "../api/PostApi";
+import "../App.css";
 
 export const Posts = () => {
 
