@@ -10,4 +10,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+ul {
+}
+
+li {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
 }
