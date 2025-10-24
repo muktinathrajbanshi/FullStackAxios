@@ -119,3 +119,15 @@ li {
   color: hsl(0, 0%, 100%);
   box-shadow: rgb(167, 54, 13) 0px 7px 19px 0px;
 }
+
+@media screen and (max-width: 980px) {
+  .section-form form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-post ol {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
