@@ -42,20 +42,61 @@ button {
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+  margin-left: 1.2rem;
+}
+
+button:hover {
+  background-color: hsl(160, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(9, 172, 115) 0px 7px 19px 0px;
 }
 
 .main-section {
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.section-form {
+  padding: 1.6rem;
+  background-color: #212f3d;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+  margin: 3.2rem auto;
+}
+
+form {
+  display: flex;
+  gap: 1.2rem;
+}
+
+& input {
+  width: 24rem;
+  color: #212f3d;
+  border: 0.1rem solid grey;
+  outline: none;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  padding: 0.8rem 1.2rem;
 }
 
 .section-post {
+  width: 90%;
 }
 
-ul {
+ol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
 }
 
 li {
