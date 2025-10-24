@@ -10,3 +10,8 @@ const api =axios.create({
 export const getPost = () => {
     return api.get("/posts");
 };
+
+// delete method 
+export const deletePost = () => {
+    return api.delete("/posts");
+}
