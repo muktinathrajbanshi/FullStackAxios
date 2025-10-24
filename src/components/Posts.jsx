@@ -24,10 +24,10 @@ export const Posts = () => {
                 const {id, body, title} = curElem;
                 return (
                     <li key={id}>
-                    <p>{title}</p>
-                    <p>{body}</p>
+                    <p>Title: {title}</p>
+                    <p>Body: {body}</p>
                     <button>Edit</button>
-                    <button>Delete</button>
+                    <button className="btn-delete">Delete</button>
                     </li>
                 );
             })
