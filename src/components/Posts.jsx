@@ -26,6 +26,9 @@ export const Posts = () => {
           return curPost.id !== id;
         });
         setData(newUpdatedPosts);
+      } else {
+        console.log("Failed to delete the post:", res.status);
+        
       }
     } catch (error) {
       console.log(error);
