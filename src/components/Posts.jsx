@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { deletePost, getPost } from "../api/PostApi";
 import "../App.css";
+import { Form } from "./Form";
 
 export const Posts = () => {
 
@@ -37,7 +38,7 @@ export const Posts = () => {
   return ( 
     <>
     <section>
-      <Form />
+      <Form data={data} setData={setData} />
     </section>
   <section className="section-post">
     <ol>
