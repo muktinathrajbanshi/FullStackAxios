@@ -28,14 +28,18 @@ export const Posts = () => {
         setData(newUpdatedPosts);
       } else {
         console.log("Failed to delete the post:", res.status);
-        
       }
     } catch (error) {
       console.log(error);
     }
   };
 
-  return <section className="section-post">
+  return ( 
+    <>
+    <section>
+      <Form />
+    </section>
+  <section className="section-post">
     <ol>
         {
             data.map((curElem) => {
@@ -52,5 +56,6 @@ export const Posts = () => {
         }
     </ol>
   </section>
-    
+  </>
+  );
 };
