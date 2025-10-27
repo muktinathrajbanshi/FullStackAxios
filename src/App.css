@@ -82,10 +82,11 @@ form {
   padding: 0 1rem;
 }
 
-.section-form input {
+input {
   width: 24rem;
   color: #212f3d;
   border: 0.1rem solid grey;
+  border: none;
   outline: none;
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
