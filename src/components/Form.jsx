@@ -24,7 +24,9 @@ export const Form = () => {
             name="body"
             />
         </div>
+        <div>
         <button type="submit">Add</button>
+        </div>
         </form>
     );
 };
