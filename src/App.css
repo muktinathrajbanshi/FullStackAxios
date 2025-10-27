@@ -21,6 +21,7 @@ input {
   letter-spacing: 0.12rem;
   line-height: 1.5;
   color: #fff;
+  margin: 1rem;
 }
 
 button {
@@ -71,12 +72,12 @@ button:hover {
   margin: 3.2rem auto;
 }
 
-form {
+.section-form form {
   display: flex;
   gap: 1.2rem;
 }
 
-& input {
+.section-form input {
   width: 24rem;
   color: #212f3d;
   border: 0.1rem solid grey;
