@@ -11,17 +11,14 @@ export const Form = () => {
             placeholder="Add Title"
             />
         </div>
-
         <div>
             <label htmlFor="body"></label>
             <input 
             type="text" 
-            name="" 
-            id="" 
+            name="body" 
+            id="body" 
             placeholder="Add Post"  
             autoComplete="off"
-            id="body" 
-            name="body"
             />
         </div>
         <div>
