@@ -11,7 +11,10 @@ export const Form = () => {
         const value = e.target.value;
 
         setAddData((prev) => {
-            console.log(prev);
+            return{
+            ...prev,
+            [name]:value,
+            };
         });
     };
 
