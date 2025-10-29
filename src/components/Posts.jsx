@@ -43,7 +43,12 @@ export const Posts = () => {
   return ( 
     <>
     <section>
-      <Form data={data} setData={setData} />
+      <Form 
+      data={data} 
+      setData={setData} 
+      updateDataApi={updateDataApi}
+      setUpdateDataApi={setUpdateDataApi} 
+      />
     </section>
   <section className="section-post">
     <ol>
