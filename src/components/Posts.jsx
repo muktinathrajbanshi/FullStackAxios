@@ -49,7 +49,7 @@ export const Posts = () => {
                     <li key={id}>
                     <p>Title: {title}</p>
                     <p>Body: {body}</p>
-                    <button>Edit</button>
+                    <button onClick={() => handleUpdatePost()}>Edit</button>
                     <button className="btn-delete" onClick={() => handleDeletePost(id)}>Delete</button>
                     </li>
                 );
