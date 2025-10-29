@@ -1,10 +1,12 @@
 import React from 'react';
-import { Posts } from './components/Posts';
+// import { Posts } from './components/Posts';
+import { Todo } from './components/Todo';
 
 const App = () => {
   return (
     <section className="main-section">
-      <Posts />
+      {/* <Posts /> */}
+      <Todo />
     </section>
   );
 };
