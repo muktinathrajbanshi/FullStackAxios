@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { postData } from "../api/PostApi";
 
-export const Form = ({ data, setData, updateDataApi, setUpdateDataApi }) => {
+export const Form = ({ data, setData, updateDataApi }) => {
     const [addData, setAddData] = useState({
         title: "",
         body: "",
