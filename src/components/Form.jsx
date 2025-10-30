@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { postData } from "../api/PostApi";
 
-export const Form = ({ data, setData, updateDataApi }) => {
+export const Form = ({ data, setData, updateDataApi, setUpdateDataApi }) => {
     const [addData, setAddData] = useState({
         title: "",
         body: "",
     });
+
+    let isEmpty = Object.keys(updateDataApi).length === 0;
 
     // get the updated Data and add into input field 
 
