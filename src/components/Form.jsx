@@ -43,6 +43,12 @@ export const Form = ({ data, setData, updateDataApi, setUpdateDataApi }) => {
     // form submission
     const handleFormSubmit = (e) => {
         e.preventDefault();
+        const action = e.nativeEvent.submitter.value;
+        if(action === "Add") {
+            addPostData();
+        } else if (action === "Edit") {
+            updatePostData();
+        }
         addPostData();
     };
 
