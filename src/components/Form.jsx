@@ -73,7 +73,7 @@ export const Form = ({ data, setData, updateDataApi, setUpdateDataApi }) => {
             />
         </div>
         <div>
-        <button type="submit">Add</button>
+        <button type="submit"> {`${isEmpty} ? "Add" : "Edit"`} Add</button>
         </div>
         </form>
     );
