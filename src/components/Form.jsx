@@ -49,7 +49,7 @@ export const Form = ({ data, setData, updateDataApi, setUpdateDataApi }) => {
 
                 setData((prev) => {
                      return prev.map((curElem) => {
-                        return curElem.id === updateDataApi.id ? res.data : curElem;
+                        return curElem.id === res.data.id ? res.data : curElem;
                      });                           
                 });
             }
