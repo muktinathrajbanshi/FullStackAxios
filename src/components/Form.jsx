@@ -45,12 +45,14 @@ export const Form = ({ data, setData, updateDataApi, setUpdateDataApi }) => {
         try {
             const res = await updateData(updateDataApi.id, addData);
             console.log(res);
+            if (res.status === 200) {
 
-            setData((prev) => {
-                 return prev.map((curElem) => {
-                    return curElem.id === res.id ? res.data : curElem;
-                 });                           
-            });
+                setData((prev) => {
+                     return prev.map((curElem) => {
+                        return curElem.id === updateDataApi.id ? res.data : curElem;
+                     });                           
+                });
+            }
 
         } catch (error) {
             console.log(error);
