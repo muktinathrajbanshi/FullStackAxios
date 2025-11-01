@@ -53,6 +53,7 @@ export const Form = ({ data, setData, updateDataApi, setUpdateDataApi }) => {
                      });                           
                 });
                 setAddData({ title: "", body: "" });
+                setUpdateDataApi({});
             }
 
         } catch (error) {
